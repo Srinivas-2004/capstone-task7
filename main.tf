@@ -38,11 +38,11 @@ resource "aws_s3_bucket_website_configuration" "website_config" {
 
 resource "aws_s3_object" "index_file" {
 
-  bucket       = aws_s3_bucket.website_bucket.id
+  bucket = aws_s3_bucket.website_bucket.id
 
-  key          = "index.html"
+  key = "index.html"
 
-  source       = "index.html"
+  source = "index.html"
 
   content_type = "text/html"
 
